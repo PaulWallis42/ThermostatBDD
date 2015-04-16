@@ -1,12 +1,25 @@
 <html>
 <head>
-  <script src='lib/jquery.min.js'></script>
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-  <div id='degrees'><span id='temperature'>20</span> ℃</div>
-  <input id='up' type='button' value='&#8593;'>
-  <input id='down' type='button' value='&#8595;'>
+  <section class="container">
+  	<div id='thermostat' class="thermostat">
+  		<p class="thermostat__temperature-container">
+  			<span id="temperature" class="thermostat__temperature">20</span>
+  			<span class="thermostat__units"> &deg;C</span>
+  		</p>
+  		<aside class="thermostat__controls">
+  			<label for="temperature_up" class="visuallyhidden">Temperature Up</label>
+  			<input id='temperature_up' class="thermostat__control thermostat__control--up" type='button' name="temperature_down" value='&#8593;' />
+  			<label for="temperature_down" class="visuallyhidden">Temperature Down</label>
+  			<input id='temperature_down' class="thermostat__control thermostat__control--down" type='button' name="temperature_down" value='&#8595;' />
+  		</aside>
+  	</div>
+  </section>
 
+  <script src='lib/jquery.min.js'></script>
   <script src='src/Thermostat.js'></script>
 </body>
 </html>

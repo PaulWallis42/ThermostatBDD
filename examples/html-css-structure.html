@@ -1,0 +1,60 @@
+<!-- HTML structure dictates CSS structure -->
+
+<div id="thermostat">
+	
+	<p class="display">
+		<div id='degrees'><span id='temperature'>20</span> ℃</div>
+	</p>
+
+	<aside class="controls">
+		<input id='up' type='button' value='&#8593;'>
+		<input id='down' type='button' value='&#8595;'>
+	</aside>
+
+</div>
+<!-- becomes -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN thermostat -->
+<div id='thermostat' class="thermostat">
+
+	<!-- BEGIN temp display -->
+	<p class="thermostat__temperature-container">
+		<span id="temperature" class="thermostat__temperature">20</span> &deg;C
+	</p>
+	<!-- END temp display -->
+
+	<!-- BEGIN controls -->
+	<aside class="thermostat__controls">
+		<input id='temperature_up' class="thermostat__control--up" type='button' value='&#8593;' />
+		<input id='temperature_down' class="thermostat__control--down" type='button' value='&#8595;' />
+	</aside>
+	<!-- END controls -->
+
+</div>
+<!-- END thermostat -->

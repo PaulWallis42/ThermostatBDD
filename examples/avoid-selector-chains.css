@@ -1,0 +1,17 @@
+/* Avoid deep selector chains */
+
+.container > .thermostat > .thermostat__temperature > #temperature {
+	color: red;
+}
+
+.thermostat {
+
+}
+
+/* the following is much easier to read and avoids
+Specificity issues - the more selectors, the more
+'powerful' the specificity of the property */
+
+.temperature {
+	color: red;
+}

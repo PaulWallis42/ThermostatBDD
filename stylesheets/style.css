@@ -1,0 +1,105 @@
+/* A reset has already been applied, so
+no need to reset anything */
+
+/* go component-by-component, 
+general -> specific */
+
+/* -- Typography -- */
+
+p {
+	font-family: "Garamond";
+	color: #444;
+}
+
+
+/* -- General Layout -- */
+
+.container {
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+	display: flex; /* only in modern browsers */
+	align-items: center;
+	box-sizing: border-box;
+}
+
+/* -- Components -- */
+
+/* thermostat */
+
+.thermostat {
+	/* layout */
+	width: 240px;
+	margin: 0 auto;
+	border: 1px solid;
+	padding: 2rem;
+	box-sizing: border-box;
+
+	/* theme */
+	border-color: #afafaf;
+	border-radius: 0.5rem;
+}
+
+.thermostat__temperature-container {
+	text-align: center;
+}
+
+.thermostat__temperature {
+	font-size: 2rem;
+}
+
+.thermostat__units {
+	color: #777;
+	position: absolute;
+}
+
+.thermostat__controls {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.thermostat__control {
+	border: 1px solid;
+
+	background: none;
+	border-color: #afafaf;
+	border-radius: 1rem;
+	color: #afafaf;
+}
+
+.thermostat__control:focus {
+	outline: none;
+
+	color: #777;
+}
+
+/* counter */
+#counter {
+    color: #00a6ae;
+    font-size: 32pt;
+    font-weight: bold;
+    position: absolute;
+    left: 170px;
+    top: 70px;
+}
+/*
+canvas {
+    border: 1px solid red;
+}
+*/
+
+/* -- Overrides -- */
+
+/* Visual hiding from 
+http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+
+.visuallyhidden {
+	position: absolute !important;
+	height: 1px; width: 1px; 
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+
